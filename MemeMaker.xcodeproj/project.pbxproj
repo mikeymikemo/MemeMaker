@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD41B70D1E44194A00A88FF1 /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD41B70C1E44194A00A88FF1 /* Meme.swift */; };
 		BDAC1C881E3EC0EF00C2661B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAC1C871E3EC0EF00C2661B /* AppDelegate.swift */; };
 		BDAC1C8D1E3EC0EF00C2661B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDAC1C8B1E3EC0EF00C2661B /* Main.storyboard */; };
 		BDAC1C8F1E3EC0EF00C2661B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDAC1C8E1E3EC0EF00C2661B /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD41B70C1E44194A00A88FF1 /* Meme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
 		BDAC1C841E3EC0EF00C2661B /* MemeMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemeMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDAC1C871E3EC0EF00C2661B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDAC1C8C1E3EC0EF00C2661B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				BDAC1C871E3EC0EF00C2661B /* AppDelegate.swift */,
 				BDAC1C8B1E3EC0EF00C2661B /* Main.storyboard */,
+				BD41B70C1E44194A00A88FF1 /* Meme.swift */,
 				BDAC1C991E3EC17700C2661B /* MemeViewController.swift */,
 				BDAC1C8E1E3EC0EF00C2661B /* Assets.xcassets */,
 				BDAC1C901E3EC0EF00C2661B /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD41B70D1E44194A00A88FF1 /* Meme.swift in Sources */,
 				BDAC1C9A1E3EC17700C2661B /* MemeViewController.swift in Sources */,
 				BDAC1C881E3EC0EF00C2661B /* AppDelegate.swift in Sources */,
 			);
@@ -302,6 +306,7 @@
 				BDAC1C981E3EC0EF00C2661B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

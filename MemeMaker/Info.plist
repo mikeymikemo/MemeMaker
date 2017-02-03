@@ -43,5 +43,7 @@
 	</array>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>&quot;Gotta make a meme!&quot;</string>
+	<key>NSCameraUsageDescription</key>
+	<string>&quot;Want to take new photos, right?&quot;</string>
 </dict>
 </plist>
