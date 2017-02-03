@@ -38,6 +38,8 @@ class SentMemesCollectionViewController: UICollectionViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         
+        super.viewWillAppear(animated)
+        
         self.tabBarController?.tabBar.isHidden = false
         self.reloadInputViews()
         self.collectionView?.reloadData()
@@ -59,6 +61,7 @@ class SentMemesCollectionViewController: UICollectionViewController {
     
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
         flowLayoutSetup(size: size)
     }
     

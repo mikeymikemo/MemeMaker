@@ -24,7 +24,7 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
         NSStrokeColorAttributeName: UIColor.black,
         NSForegroundColorAttributeName: UIColor.white,
         NSFontAttributeName: UIFont(name: "HelveticaNeue-CondensedBlack", size: 40.0)!,
-        NSStrokeWidthAttributeName: -1.0
+        NSStrokeWidthAttributeName: -3.0
     ]
     
     //     var memes: [Meme]!
@@ -47,15 +47,8 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        topTextField.text = "TOP TEXT HERE"
-        bottomTextField.text = "BOTTOM TEXT HERE"
-        topTextField.delegate = self
-        bottomTextField.delegate = self
-        topTextField.defaultTextAttributes = memeTextAttributes
-        bottomTextField.defaultTextAttributes = memeTextAttributes
-        topTextField.textAlignment = .center
-        bottomTextField.textAlignment = .center
-        
+configureTextFields(textField: topTextField)
+        configureTextFields(textField: bottomTextField)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -106,6 +99,19 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     // MARK: Functions
     //==================================================
     
+    func configureTextFields(textField: UITextField) {
+        
+        if textField == topTextField {
+        textField.text = "TOP TEXT HERE"
+        } else {
+        textField.text = "BOTTOM TEXT HERE"
+        }
+        
+        textField.delegate = self
+        textField.defaultTextAttributes = memeTextAttributes
+        textField.textAlignment = .center
+        
+    }
     
     func presentPicker(withSource source: UIImagePickerControllerSourceType) {
         let pickerController = UIImagePickerController()
