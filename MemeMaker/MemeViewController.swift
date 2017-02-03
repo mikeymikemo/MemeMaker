@@ -75,18 +75,12 @@ class MemeViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     
     @IBAction func pictureButtonTapped(_ sender: Any) {
         
-        let pickerController = UIImagePickerController()
-        pickerController.delegate = self
-        pickerController.sourceType = .photoLibrary
-        self.present(pickerController, animated: true, completion: nil)
+        presentPicker(withSource: .photoLibrary)
     }
     
     @IBAction func cameraButtonTapped(_ sender: Any) {
         
-        let pickerController = UIImagePickerController()
-        pickerController.delegate = self
-        pickerController.sourceType = .camera
-        self.present(pickerController, animated: true, completion: nil)
+        presentPicker(withSource: .camera)
     }
     
     @IBAction func shareButtonTapped(_ sender: Any) {
@@ -108,6 +102,13 @@ class MemeViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     // MARK: Functions
     //==================================================
 
+    
+    func presentPicker(withSource source: UIImagePickerControllerSourceType) {
+        let pickerController = UIImagePickerController()
+        pickerController.delegate = self
+        pickerController.sourceType = source
+        self.present(pickerController, animated: true, completion: nil)
+    }
     func generateMemedImage() -> UIImage {
         
         //TODO: Hide toolbar and navbar
